@@ -29,7 +29,7 @@ Slash command to build jenkins job via apigw and lambda
 - `JENKINS_URL`: Base URL for your jenkins install (http://FQDNorIP)
 - `SLACK_COMMAND`: Name of the Slack slash-command, e.g. /rollout
 - `SLACK_TOKEN`: Slack token from the slash command <br>
-6. Create a Slack slash-command that posts to your API gateway POST resource <br>
+6. [Create a Slack slash-command](https://api.slack.com/tutorials/easy-peasy-slash-commands) that posts to your API gateway POST resource <br>
 7. Run your slash-command with parameters /rollout <job> <branch>, the parameter branch will be passed in to the parameterized build on Jenkins side <br>
 
 #### Future features:
