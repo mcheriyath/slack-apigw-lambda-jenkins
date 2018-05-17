@@ -3,7 +3,7 @@ Slash command to build jenkins job via apigw and lambda
 
 1. Need a plugin called [Build Authorization Token](https://plugins.jenkins.io/build-token-root) installed on jenkins <br>
 2. Create a [Build token](https://stackoverflow.com/questions/42817169/jenkins-trigger-builds-remotely-authentication-token-option-missing) for the specific job <br>
-3. Create an API gw with a POST resource that uses this body mapping template for Content-Type application/x-www-form-urlencoded :
+3. [Create an API gw with a POST resource](https://docs.aws.amazon.com/apigateway/latest/developerguide/integrating-api-with-aws-services-lambda.html#api-as-lambda-proxy-create-api-resources) that uses this body mapping template for Content-Type application/x-www-form-urlencoded :
 ```
 {
     "data": {
